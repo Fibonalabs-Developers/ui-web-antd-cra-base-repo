@@ -1,9 +1,8 @@
 import { Button } from 'antd';
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDummyList } from 'src/api/demo';
 
-const HomePage = () => {
+function HomePage() {
   const { data } = useDummyList();
 
   return (
@@ -25,6 +24,6 @@ const HomePage = () => {
       </ul>
     </>
   );
-};
+}
 
 export default HomePage;
